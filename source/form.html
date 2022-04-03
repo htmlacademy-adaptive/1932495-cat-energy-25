@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
+      <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Логотип">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#"></a>Главная</li>
+          <li class="main-nav__item"><a href="#"></a>Каталог продукции</li>
+          <li class="main-nav__item"><a href="#"></a>Подбор программы</li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Форма самая сложная оказалась. Сложно понять, как правильно все совместить. Нужен ли fieldset?-->
+  <main class="main-container">
+    <h1 class="main-container__title">Подбор программы</h1>
+    <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <form action="#" class="main-container__form form" method="get">
+      <div class="form__container">
+        <label class="form__field form-field">
+          <span class="form-field__label">Имя</span>
+          <input class="form-field__control" type="text" name="cat-name" placeholder="Барсик">
+        </label>
+        <label class="form__field form-field">
+          <span class="form-field__label">Вес (кг):*</span>
+          <input class="form-field__control" type="number" name="weight-name" placeholder="7">
+        </label>
+        <label class="form__field form-field">
+          <span class="form-field__label">Возраст (лет):</span>
+          <input class="form-field__control" type="number" name="age-name" placeholder="7">
+        </label>
+      </div>
+      <div class="form__container">
+        <label class="form__field radio">
+          <input class="radio__control" type="radio" name="weight-less" checked>
+          <span class="radio__label">Похудение</span>
+        </label>
+        <label class="form__field radio">
+          <input class="radio__control" type="radio" name="weight-more">
+          <span class="radio__label">Набор массы</span>
+        </label>
+        <label class="form__field radio">
+          <input class="radio__control" type="radio" name="weight-advice">
+          <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+        </label>
+      </div>
+      <div class="form__container">
+        <h3 class="form__tittle"> Контактные данные (владельца кота)</h3>
+        <label class="form__field form-field">
+          <span class="form-field__label">E-mail:*</span>
+          <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com">
+        </label>
+        <label class="form__field form-field">
+          <span class="form-field__label">Телефон:*</span>
+          <input class="form-field__control" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        </label>
+      </div>
+      <div class="form__container">
+        <h3 class="form__tittle">Комментарий</h3>
+        <label class="form__field form-field">
+          <textarea class="form-field__control" name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
+      </div>
+      <div class="form__container">
+        <h3 class="form__tittle">Дополнительно</h3>
+        <label class="form__field check">
+          <input class="check__control" type="checkbox" name="instead-shugar" checked>
+          <span class="check__label">Cахарозаменитель</span>
+        </label>
+        <label class="form__field check">
+          <input class="check__control" type="checkbox" name="water">
+          <span class="check__label">Питьевая вода</span>
+        </label>
+        <label class="form__field check">
+          <input class="check__control" type="checkbox" name="milk">
+          <span class="check__label">Молоко</span>
+        </label>
+        <label class="form__field check">
+          <input class="check__control" type="checkbox" name="vitamin">
+          <span class="check__label">Витамины</span>
+        </label>
+        <button class="button form__button">Отправить заявку</button>
+        <p class="form__required-field">
+          <sup>*</sup>
+          — Обязательные поля
+        </p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__contacts contacts">
+        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <address class="conracts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж">
+      </div>
+      <div class="main-footer__logo logo">
+        <a class="logo__link">
+          <img class="logo__image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип">
+        </a>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
+              Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -13,7 +14,7 @@
       <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Логотип">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#"></a>Главная</li>
@@ -24,7 +25,6 @@
     </nav>
   </header>
 
-  <!-- Форма самая сложная оказалась. Сложно понять, как правильно все совместить. Нужен ли fieldset?-->
   <main class="main-container">
     <h1 class="main-container__title">Подбор программы</h1>
     <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -36,11 +36,11 @@
         </label>
         <label class="form__field form-field">
           <span class="form-field__label">Вес (кг):*</span>
-          <input class="form-field__control" type="number" name="weight-name" placeholder="7">
+          <input class="form-field__control" type="text" name="weight-name" placeholder="7">
         </label>
         <label class="form__field form-field">
           <span class="form-field__label">Возраст (лет):</span>
-          <input class="form-field__control" type="number" name="age-name" placeholder="7">
+          <input class="form-field__control" type="text" name="age-name" placeholder="7">
         </label>
       </div>
       <div class="form__container">
@@ -71,7 +71,7 @@
       <div class="form__container">
         <h3 class="form__tittle">Комментарий</h3>
         <label class="form__field form-field">
-          <textarea class="form-field__control" name="comment"
+          <textarea class="form-field__control" name="comment" rows="8"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </div>
@@ -106,7 +106,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="conracts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж">
       </div>
       <div class="main-footer__logo logo">

@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -13,20 +14,17 @@
       <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Логотип">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#"></a>Главная</li>
-          <li class="main-nav__item"><a href="#"></a>Каталог продукции</li>
-          <li class="main-nav__item"><a href="#"></a>Подбор программы</li>
-        </ul>
-      </div>
+      <button class="main-nav__toggle" type="button"><span class>Открыть меню</span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#"></a>Главная</li>
+        <li class="main-nav__item"><a href="#"></a>Каталог продукции</li>
+        <li class="main-nav__item"><a href="#"></a>Подбор программы</li>
+      </ul>
     </nav>
   </header>
 
   <main class="main-container">
     <h1 class="main-container__title">Каталог продукции</h1>
-    <!-- Кажется, что эта секция очень раздутая, много кода. Был еще вариант сделать через список, как более правильно? -->
     <section class="catalog">
       <h2 class="visually-hidden">Карточки с товарами</h2>
       <article class="catalog__card card">
@@ -48,7 +46,7 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card card">
         <div class="card__image">
@@ -69,7 +67,7 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card card">
         <div class="card__image">
@@ -90,7 +88,7 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card card">
         <div class="card__image">
@@ -111,7 +109,7 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card card">
         <div class="card__image">
@@ -132,7 +130,7 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card card">
         <div class="card__image">
@@ -153,7 +151,7 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card card">
         <div class="card__image">
@@ -174,12 +172,13 @@
             </dl>
           </div>
         </div>
-        <button class="button catalog__button">Заказать</button>
+        <a href="#" class="button catalog__button">Заказать</a>
       </article>
       <article class="catalog__card--all-catalog all-cards">
         <h3 class="all-cards__title">Показать еще 100500 товаров</h3>
         <p class="all-cards__description">На самом деле вкусов гораздо больше!</p>
-        <button class="button catalog__button--all-cards">Показать все</button>
+        <a class="button catalog__button--all-cards">Показать все</a>
+      </article>
       </article>
     </section>
     <section class="other-products">
@@ -189,25 +188,25 @@
           <h3 class="other-products__title">Сахарозаменитель</h3>
           <p class="other-products__count">1 упаковка (100 г)</p>
           <p class="other-products__price">200 Р.</p>
-          <button class="button other-products__button">Заказать</button>
+          <a href="#" class="button other-products__button">Заказать</a>
         </li>
         <li class="other-products__item">
           <h3 class="other-products__title">Питьевая вода</h3>
           <p class="other-products__count">5 литров</p>
           <p class="other-products__price">50 Р.</p>
-          <button class="button other-products__button">Заказать</button>
+          <a href="#" class="button other-products__button">Заказать</a>
         </li>
         <li class="other-products__item">
           <h3 class="other-products__title">Молоко</h3>
           <p class="other-products__count">1 литр</p>
           <p class="other-products__price">100 Р.</p>
-          <button class="button other-products__button">Заказать</button>
+          <a href="#" class="button other-products__button">Заказать</a>
         </li>
         <li class="other-products__item">
           <h3 class="other-products__title">Витамины</h3>
           <p class="other-products__count">1 упаковка (30 г)</p>
           <p class="other-products__price">300 Р.</p>
-          <button class="button other-products__button">Заказать</button>
+          <a href="#" class="button other-products__button">Заказать</a>
         </li>
       </ul>
       <div class="other-products__gift gift">
@@ -220,7 +219,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <address class="conracts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж">
       </div>
       <div class="main-footer__logo logo">

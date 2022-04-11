@@ -1,0 +1,39 @@
+.radio {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+  position: relative;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #d9d9d9;
+  left: 0;
+  top: 0;
+}
+
+.radio__control[type="radio"]:checked + .radio__label::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #68b738;
+  left: 9px;
+}

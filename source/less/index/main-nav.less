@@ -16,3 +16,34 @@
   line-height: 20px;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    width: 728px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: 440px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 920px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav {
+    width: 800px;
+  }
+}

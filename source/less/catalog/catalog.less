@@ -9,3 +9,22 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.catalog__card--all-catalog {
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

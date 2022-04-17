@@ -3,31 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
       <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Логотип">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#"></a>Главная</li>
-          <li class="main-nav__item"><a href="#"></a>Каталог продукции</li>
-          <li class="main-nav__item"><a href="#"></a>Подбор программы</li>
-        </ul>
-      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item menu-item"><a href="#"></a>Главная</li>
+        <li class="main-nav__item menu-item"><a href="#"></a>Каталог продукции</li>
+        <li class="main-nav__item menu-item"><a href="#"></a>Подбор программы</li>
+      </ul>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
 
   <main class="main-container">
-    <h1 class="main-container__title">Подбор программы</h1>
-    <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <div class="main-container__header">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <p class="main-container__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
     <form action="#" class="main-container__form form" method="get">
       <div class="form__container">
         <label class="form__field form-field">
@@ -77,27 +78,37 @@
       </div>
       <div class="form__container">
         <h3 class="form__tittle">Дополнительно</h3>
-        <label class="form__field check">
-          <input class="check__control" type="checkbox" name="instead-shugar" checked>
-          <span class="check__label">Cахарозаменитель</span>
-        </label>
-        <label class="form__field check">
-          <input class="check__control" type="checkbox" name="water">
-          <span class="check__label">Питьевая вода</span>
-        </label>
-        <label class="form__field check">
-          <input class="check__control" type="checkbox" name="milk">
-          <span class="check__label">Молоко</span>
-        </label>
-        <label class="form__field check">
-          <input class="check__control" type="checkbox" name="vitamin">
-          <span class="check__label">Витамины</span>
-        </label>
-        <button class="button form__button">Отправить заявку</button>
-        <p class="form__required-field">
-          <sup>*</sup>
-          — Обязательные поля
-        </p>
+        <div class="check-container">
+          <div class="check-field">
+            <label class="form__field check">
+              <input class="check__control" type="checkbox" name="instead-shugar" checked>
+              <span class="check__label">Cахарозаменитель</span>
+            </label>
+          </div>
+          <div class="check-field">
+            <label class="form__field check">
+              <input class="check__control" type="checkbox" name="water">
+              <span class="check__label">Питьевая вода</span>
+            </label>
+          </div>
+          <div class="check-field">
+            <label class="form__field check">
+              <input class="check__control" type="checkbox" name="milk">
+              <span class="check__label">Молоко</span>
+            </label>
+          </div>
+          <div class="check-field">
+            <label class="form__field check">
+              <input class="check__control" type="checkbox" name="vitamin">
+              <span class="check__label">Витамины</span>
+            </label>
+          </div>
+          <button class="button form__button">Отправить заявку</button>
+          <p class="form__required-field">
+            <sup>*</sup>
+            — Обязательные поля
+          </p>
+        </div>
       </div>
     </form>
   </main>
@@ -107,7 +118,7 @@
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж">
+        <!-- <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж"> -->
       </div>
       <div class="main-footer__logo logo">
         <a class="logo__link">

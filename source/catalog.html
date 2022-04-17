@@ -4,22 +4,23 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo">
       <img class="main-header__logo-image" src="img/logo-mobile.svg" width="33" height="37" alt="Логотип">
       <img class="main-header__logo-text" src="img/logo-text-mobile.svg" width="101" height="18" alt="Логотип">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class>Открыть меню</span></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#"></a>Главная</li>
-        <li class="main-nav__item"><a href="#"></a>Каталог продукции</li>
-        <li class="main-nav__item"><a href="#"></a>Подбор программы</li>
+        <li class="main-nav__item menu-item"><a href="#"></a>Главная</li>
+        <li class="main-nav__item menu-item"><a href="#"></a>Каталог продукции</li>
+        <li class="main-nav__item menu-item"><a href="#"></a>Подбор программы</li>
       </ul>
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
   </header>
 
@@ -174,7 +175,7 @@
         </div>
         <a href="#" class="button catalog__button">Заказать</a>
       </article>
-      <article class="catalog__card--all-catalog all-cards">
+      <article class="catalog__card catalog__card--all-catalog all-cards">
         <h3 class="all-cards__title">Показать еще 100500 товаров</h3>
         <p class="all-cards__description">На самом деле вкусов гораздо больше!</p>
         <a class="button catalog__button--all-cards">Показать все</a>
@@ -183,34 +184,46 @@
     </section>
     <section class="other-products">
       <h2 class="other-products__header">Дополнительные товары</h2>
-      <ul class="other-products__list">
-        <li class="other-products__item">
-          <h3 class="other-products__title">Сахарозаменитель</h3>
-          <p class="other-products__count">1 упаковка (100 г)</p>
-          <p class="other-products__price">200 Р.</p>
-          <a href="#" class="button other-products__button">Заказать</a>
-        </li>
-        <li class="other-products__item">
-          <h3 class="other-products__title">Питьевая вода</h3>
-          <p class="other-products__count">5 литров</p>
-          <p class="other-products__price">50 Р.</p>
-          <a href="#" class="button other-products__button">Заказать</a>
-        </li>
-        <li class="other-products__item">
-          <h3 class="other-products__title">Молоко</h3>
-          <p class="other-products__count">1 литр</p>
-          <p class="other-products__price">100 Р.</p>
-          <a href="#" class="button other-products__button">Заказать</a>
-        </li>
-        <li class="other-products__item">
-          <h3 class="other-products__title">Витамины</h3>
-          <p class="other-products__count">1 упаковка (30 г)</p>
-          <p class="other-products__price">300 Р.</p>
-          <a href="#" class="button other-products__button">Заказать</a>
-        </li>
-      </ul>
-      <div class="other-products__gift gift">
-        <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="other-products__container">
+        <div class="other-products__column-2">
+          <ul class="other-products__list">
+            <li class="other-products__item">
+              <h3 class="other-products__title products">Сахарозаменитель</h3>
+              <div class="other-products__column products">
+                <p class="other-products__count">1 упаковка (100 г)</p>
+                <p class="other-products__price">200 Р.</p>
+              </div>
+              <a href="#" class="button other-products__button">Заказать</a>
+            </li>
+            <li class="other-products__item">
+              <h3 class="other-products__title products">Питьевая вода</h3>
+              <div class="other-products__column products">
+                <p class="other-products__count">5 литров</p>
+                <p class="other-products__price">50 Р.</p>
+              </div>
+              <a href="#" class="button other-products__button">Заказать</a>
+            </li>
+            <li class="other-products__item">
+              <h3 class="other-products__title products">Молоко</h3>
+              <div class="other-products__column products">
+                <p class="other-products__count">1 литр</p>
+                <p class="other-products__price">100 Р.</p>
+              </div>
+              <a href="#" class="button other-products__button">Заказать</a>
+            </li>
+            <li class="other-products__item">
+              <h3 class="other-products__title products">Витамины</h3>
+              <div class="other-products__column products">
+                <p class="other-products__count">1 упаковка (30 г)</p>
+                <p class="other-products__price">300 Р.</p>
+              </div>
+              <a href="#" class="button other-products__button">Заказать</a>
+            </li>
+          </ul>
+        </div>
+        <div class="other-products__gift gift">
+          <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>
@@ -220,8 +233,8 @@
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж">
       </div>
+      <!-- <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж"> -->
       <div class="main-footer__logo logo">
         <a class="logo__link">
           <img class="logo__image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип">

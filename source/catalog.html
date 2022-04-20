@@ -26,7 +26,7 @@
 
   <main class="main-container">
     <h1 class="main-container__title">Каталог продукции</h1>
-    <section class="catalog">
+    <section class="catalog catalog-wrapper">
       <h2 class="visually-hidden">Карточки с товарами</h2>
       <article class="catalog__card card">
         <div class="card__image">
@@ -40,8 +40,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">500 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Курица</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">700 Р.</dd>
             </dl>
@@ -61,8 +65,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">1000 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Курица</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">1000 Р.</dd>
             </dl>
@@ -82,8 +90,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">500 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Рыба</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">700 Р.</dd>
             </dl>
@@ -103,8 +115,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">1000 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Рыба</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">1000 Р.</dd>
             </dl>
@@ -124,8 +140,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">500 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Гречка</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">400 Р.</dd>
             </dl>
@@ -145,8 +165,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">1000 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Гречка</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">700 Р.</dd>
             </dl>
@@ -166,8 +190,12 @@
             <dl class="card__list">
               <dt class="card__parameter">Масса</dt>
               <dd class="card__value">500 г</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter"> Вкус</dt>
               <dd class="card__value">Рис</dd>
+            </dl>
+            <dl class="card__list">
               <dt class="card__parameter">Цена</dt>
               <dd class="card__value">500 Р.</dd>
             </dl>
@@ -182,7 +210,7 @@
       </article>
       </article>
     </section>
-    <section class="other-products">
+    <section class="other-products catalog-wrapper">
       <h2 class="other-products__header">Дополнительные товары</h2>
       <div class="other-products__container">
         <div class="other-products__column-2">
@@ -232,9 +260,10 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <!-- <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж"> -->
+      <div class="contacts__gmap">
+      </div>
       <div class="main-footer__logo logo">
         <a class="logo__link">
           <img class="logo__image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип">

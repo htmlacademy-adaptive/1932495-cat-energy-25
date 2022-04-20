@@ -32,12 +32,12 @@
     <form action="#" class="main-container__form form" method="get">
       <div class="form__container">
         <label class="form__field form-field">
-          <span class="form-field__label">Имя</span>
-          <input class="form-field__control" type="text" name="cat-name" placeholder="Барсик">
+          <span class="form-field__label">Имя*</span>
+          <input class="form-field__control" type="text" name="cat-name" placeholder="Барсик" required>
         </label>
         <label class="form__field form-field">
           <span class="form-field__label">Вес (кг):*</span>
-          <input class="form-field__control" type="text" name="weight-name" placeholder="7">
+          <input class="form-field__control" type="text" name="weight-name" placeholder="7" required>
         </label>
         <label class="form__field form-field">
           <span class="form-field__label">Возраст (лет):</span>
@@ -47,22 +47,25 @@
       <div class="form__container">
         <label class="form__field radio">
           <input class="radio__control" type="radio" name="weight" checked>
-          <span class="radio__label">Похудение</span>
+          <span class="radio__label"></span>
+          Похудение
         </label>
         <label class="form__field radio">
           <input class="radio__control" type="radio" name="weight">
-          <span class="radio__label">Набор массы</span>
+          <span class="radio__label"></span>
+          Набор массы
         </label>
         <label class="form__field radio">
-          <input class="radio__control" type="radio" name="weight">
-          <span class="radio__label">Не знаю (Нужен ваш совет)</span>
+          <input class="radio__control" type="radio" name="weight" disabled>
+          <span class="radio__label"></span>
+          Не знаю (Нужен ваш совет)
         </label>
       </div>
       <div class="form__container">
         <h3 class="form__tittle"> Контактные данные (владельца кота)</h3>
         <label class="form__field form-field">
           <span class="form-field__label">E-mail:*</span>
-          <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com">
+          <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com" required>
         </label>
         <label class="form__field form-field">
           <span class="form-field__label">Телефон:*</span>
@@ -82,25 +85,29 @@
           <div class="check-field">
             <label class="form__field check">
               <input class="check__control" type="checkbox" name="instead-shugar" checked>
-              <span class="check__label">Cахарозаменитель</span>
+              <span class="check__label"></span>
+              Cахарозаменитель
             </label>
           </div>
           <div class="check-field">
             <label class="form__field check">
               <input class="check__control" type="checkbox" name="water">
-              <span class="check__label">Питьевая вода</span>
+              <span class="check__label"></span>
+              Питьевая вода
             </label>
           </div>
           <div class="check-field">
             <label class="form__field check">
               <input class="check__control" type="checkbox" name="milk">
-              <span class="check__label">Молоко</span>
+              <span class="check__label"></span>
+              Молоко
             </label>
           </div>
           <div class="check-field">
             <label class="form__field check">
               <input class="check__control" type="checkbox" name="vitamin">
-              <span class="check__label">Витамины</span>
+              <span class="check__label"></span>
+              Витамины
             </label>
           </div>
           <button class="button form__button">Отправить заявку</button>
@@ -118,7 +125,8 @@
       <div class="main-footer__contacts contacts">
         <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <!-- <img class="contacts__map" src="img/map-footer-mobile.jpg" alt="Карта расположений точек продаж"> -->
+      </div>
+      <div class="contacts__gmap">
       </div>
       <div class="main-footer__logo logo">
         <a class="logo__link">

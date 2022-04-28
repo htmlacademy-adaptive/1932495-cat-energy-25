@@ -1,24 +1,14 @@
 .catalog__button--all-cards {
   color: #444444;
   background-color: #f2f2f2;
-}
-
-.catalog__card,
-.catalog__card--all-catalog {
-  padding-bottom: 25px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.catalog__card--all-catalog {
-  flex-direction: column;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .catalog {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
+    grid-column-gap: 60px;
   }
 }
 
@@ -26,5 +16,40 @@
   .catalog {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+
+.catalog__button--all-cards::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/plus.svg");
+  width: 30px;
+  height: 30px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -140px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__button--all-cards::before {
+    background-image: url("../../img/plus-big.svg");
+    width: 60px;
+    height: 60px;
+    top: -300px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__button {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__card:not(:last-child) {
+    margin-bottom: 141px;
   }
 }

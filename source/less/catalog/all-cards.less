@@ -8,6 +8,37 @@
   margin: 0 0 8px 0;
 }
 
+@media (min-width: @tablet-width) {
+  .all-cards__title {
+    font-size: 20px;
+    line-height: 22px;
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+
 .all-cards__description {
-  margin: 0 0 21px 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .all-cards__description {
+    width: 167px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+
+.all-cards {
+  text-align: center;
+  padding: 78px 30px 25px 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .all-cards {
+    padding: 165px 30px 25px 30px;
+    min-height: 400px;
+    max-width: 324px;
+  }
 }

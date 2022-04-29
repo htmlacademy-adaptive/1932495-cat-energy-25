@@ -1,6 +1,5 @@
 .promo-block {
   font-family: "Oswald", sans-serif;
-  // height: 302px;
   color: #ffffff;
   text-align: center;
 }
@@ -10,7 +9,8 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
+  min-width: 250px;
 }
 
 .promo-block__slogan {
@@ -19,6 +19,14 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.promo-block__wrapper {
+  position: relative;
+  min-height: 320px;
+  margin-bottom: 165px;
+  padding: 33px 39px 122px;
+  box-sizing: border-box;
 }
 
 .promo-block__wrapper::before {
@@ -41,9 +49,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  width: 280px;
+  width: 310px;
   height: 270px;
-  bottom: 45px;
+  bottom: 80px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -51,12 +59,4 @@
 
 .promo-block__button {
   position: relative;
-}
-
-.promo-block__wrapper {
-  position: relative;
-  min-height: 320px;
-  margin-bottom: 165px;
-  padding: 27px 36px 122px;
-  box-sizing: border-box;
 }

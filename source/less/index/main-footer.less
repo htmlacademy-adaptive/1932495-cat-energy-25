@@ -1,6 +1,26 @@
-.main-footer__logo,
-.main-footer__social,
+.main-footer__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-footer__logo {
+  text-align: center;
+}
+
 .main-footer__copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    padding: 60px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

@@ -7,16 +7,51 @@
   max-width: 138px;
 }
 
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 180px;
+  }
+}
+
 .contacts__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
-  max-width: 138px;
+  font-style: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .contacts {
   padding: 0 20px 25px 20px;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: absolute;
+    left: 110px;
+    top: 90px;
+    max-width: 570px;
+    width: 100%;
+    min-height: 198px;
+    background: #ffffff;
+    padding: 65px 75px;
+    z-index: 1;
+  }
 }

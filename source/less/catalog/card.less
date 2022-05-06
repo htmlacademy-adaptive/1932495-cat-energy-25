@@ -31,38 +31,37 @@
     width: 100%;
     background-color: @lightgrey;
     min-height: 400px;
-    padding: 130px 0 40px 0;
-    max-width: 324px;
+    padding: 150px 0 40px 0;
+    max-width: 325px;
   }
 }
 
-
-@media (min-width: @tablet-width) {
-  .card--big {
-    padding-top: 150px;
+@media (min-width: @desktop-width) {
+  .card {
+    max-width: 245px;
+    min-height: 245px;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .card__link {
     position: absolute;
-    top: -190px;
-    left: 50%;
+    top: -220px;
+    display: flex;
+    min-height: 211px;
+    align-items: flex-end;
   }
 }
 
-
-@media (min-width: @tablet-width) {
-  .card__link--big {
-    position: absolute;
-    top: -215px;
-    left: 50%;
+@media (min-width: @desktop-width) {
+  .card__link {
+    top: -210px;
+    display: flex;
+    min-height: 211px;
+    align-items: flex-end;
   }
 }
 
-
-.card__list,
 .card__value {
   margin: 0;
 }
@@ -72,14 +71,26 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin: 0;
 }
 
 @media (min-width: @tablet-width) {
   .card__list {
     padding-bottom: 16px;
+    position: relative;
   }
 }
 
+@media (min-width: @tablet-width) {
+  .card__list::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #cdcdcd;
+    top: 25px;
+  }
+}
 
 .card__item {
   font-family: "Arial", sans-serif;
@@ -96,59 +107,32 @@
 
 .card__image {
   position: relative;
-  padding-left: 36px;
-  padding-top: 15px;
-  width: 40%;
+  padding-top: 20px;
+  width: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .card__image {
+    justify-content: center;
+    display: flex;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .card__image {
     width: 100%;
-    left: -25%;
-  }
-}
-
-.card__image--big {
-  position: relative;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-top: 13px;
-  width: 35%;
-}
-
-@media (min-width: @tablet-width) {
-  .card__image--big {
-    width: 100%;
-    left: -25%;
   }
 }
 
 .card__wrapper {
   display: flex;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 @media (min-width: @tablet-width) {
   .card__wrapper {
     flex-direction: column;
     align-items: center;
-  }
-}
-
-
-.card__wrapper--big {
-  display: flex;
-  padding-top: 15px;
-  padding-bottom: 8px;
-}
-
-@media (min-width: @tablet-width) {
-  .card__wrapper--big {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 23px;
   }
 }
 

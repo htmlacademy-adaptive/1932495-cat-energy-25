@@ -2,8 +2,34 @@
   padding: 20px 0;
 }
 
+@media (min-width: @tablet-width) {
+  .menu-item {
+    padding: 0;
+  }
+}
+
 .menu-item__link {
   display: inline-block;
   text-decoration: none;
   color: #000000;
+}
+
+.menu-item__link:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: @tablet-width) {
+  .menu-item__link {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 18px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-item__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

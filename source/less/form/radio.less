@@ -12,6 +12,14 @@
   padding-bottom: 15px;
 }
 
+@media (min-width: @tablet-width) {
+  .radio {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 85px;
+  }
+}
+
 .radio__label {
   content: "";
   position: absolute;
@@ -21,6 +29,14 @@
   border: 1px solid #cdcdcd;
   left: 0;
   top: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__label {
+    width: 40px;
+    height: 40px;
+    left: 30px;
+  }
 }
 
 .radio__control {
@@ -38,6 +54,13 @@
   background: #68b738;
   left: 9px;
   top: 9px;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__control:checked + .radio__label::after {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .radio__control:hover + .radio__label {

@@ -1,10 +1,40 @@
-.main-header {
-  width: 280px;
-  margin: 0 auto;
-  position: relative;
-}
-
 .main-header__logo-image {
   margin-right: 57px;
   width: auto;
+}
+
+.main-header__container {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px #d9d9d9 solid;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header__container {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 22px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header__container {
+    padding: 55px 0 0 0;
+    border-bottom: none;
+    width: 1240px;
+    margin: 0 auto;
+  }
+}
+
+.main-header__container--index {
+  border: none;
+  margin-bottom: 0;
 }

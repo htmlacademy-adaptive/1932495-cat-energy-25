@@ -11,12 +11,84 @@
   position: relative;
 }
 
+@media (min-width: @tablet-width) {
+  .form__tittle {
+    font-size: 36px;
+    line-height: 36px;
+    width: 550px;
+  }
+}
+
 .form__tittle--width {
   padding: 10px 0 35px 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .form__tittle--width {
+    padding-top: 35px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__tittle--textarea {
+    margin-bottom: 85px;
+    padding-bottom: 0;
+  }
+}
+
 .form__container {
   padding: 0 20px 25px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__container {
+    padding: 25px 60px 25px 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__container {
+    padding: 25px 10px 25px 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__container {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__container--radio {
+    padding: 50px 60px 25px 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__container--radio {
+    padding: 50px 60px 25px 40px;
+  }
+}
+
+.form__container--width {
+  padding-bottom: 10px;
+}
+
+.form__container--textarea {
+  padding-bottom: 15px;
+}
+
+@media (min-width: @tablet-width) {
+  .form__container--textarea {
+    padding-top: 35px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__container--check {
+    padding-top: 40px;
+  }
 }
 
 .form__required-field {
@@ -25,6 +97,38 @@
 
 @media (min-width: @tablet-width) {
   .form__button {
+    font-size: 20px;
+    padding: 13px 45px;
     width: 282px;
+    margin-right: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__button {
+    width: 568px;
+  }
+}
+
+.form__icon {
+  position: absolute;
+  right: 15px;
+}
+
+@media (min-width: @desktop-width) {
+  .form__raw {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__raw--2 {
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__container--raw {
+    flex-basis: 50%;
   }
 }

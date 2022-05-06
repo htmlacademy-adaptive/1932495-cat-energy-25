@@ -1,5 +1,30 @@
+@media (min-width: @desktop-width) {
+  .container {
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__add {
+    padding-top: 50px;
+    padding-left: 30px;
+    margin-bottom: 155px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__add {
+    padding-left: 7px;
+    margin-bottom: 165px;
+    padding-top: 17px;
+  }
+}
+
 .main-container__block {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 
 .main-container__title {
@@ -8,6 +33,20 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0 0 37px 0;
+}
+
+
+@media (min-width: @tablet-width) {
+  .main-container__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__title {
+    padding-top: 50px;
+  }
 }
 
 .main-container__text {
@@ -20,6 +59,35 @@
   width: 226px;
 }
 
+@media (min-width: @tablet-width) {
+  .main-container__text {
+    font-size: 20px;
+    line-height: 30px;
+    width: 350px;
+  }
+}
+
 .main-container__header {
-  padding: 40px 20px 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__header {
+    margin-bottom: 35px;
+    padding: 20px 20px 0 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-container__header {
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-container__form {
+    margin-bottom: 55px;
+  }
 }

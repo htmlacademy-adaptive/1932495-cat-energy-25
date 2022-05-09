@@ -1,13 +1,22 @@
 .check {
   display: flex;
   position: relative;
-  padding: 10px 0 10px 45px;
+  padding: 7px 0 10px 45px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   padding-bottom: 13px;
+}
+
+@media (min-width: @tablet-width) {
+  .check {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 60px;
+  }
 }
 
 .check__control {
@@ -25,6 +34,14 @@
   top: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .check::after {
+    width: 40px;
+    height: 40px;
+    top: 25px;
+  }
+}
+
 .check__control:checked + .check__label::after {
   content: "";
   position: absolute;
@@ -36,4 +53,11 @@
   border-right: 1px solid #68b738;
   border-bottom: 1px solid #68b738;
   transform: translateY(-50%) rotate(45deg);
+}
+
+@media (min-width: @tablet-width) {
+  .check__control:checked + .check__label::after {
+    left: 15px;
+    top: 40px;
+  }
 }

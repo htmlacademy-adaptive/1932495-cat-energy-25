@@ -3,7 +3,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  margin: 0 0 36px 0;
+  margin: 0 0 45px 0;
   position: relative;
   width: 250px;
   background-color: #ffffff;
@@ -14,6 +14,19 @@
 @media (min-width: @tablet-width) {
   .other-products__header {
     margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+    width: 420px;
+    padding-left: 65px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-products__header {
+    font-size: 36px;
+    line-height: 36px;
+    width: 430px;
   }
 }
 
@@ -26,6 +39,20 @@
   right: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .other-products::before {
+    top: 20px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .other-products::before {
+    left: -100px;
+    width: 100vw;
+  }
+}
+
 .other-products {
   position: relative;
 }
@@ -36,22 +63,83 @@
   padding: 0;
 }
 
-.other-products__title,
-.other-products__count,
+@media (min-width: @desktop-width) {
+  .other-products__list {
+    padding-right: 20px;
+  }
+}
+
+.other-products__count {
+  margin: 0;
+}
+
 .other-products__price {
   margin: 0;
 }
 
-.other-products__item {
-  padding-bottom: 20px;
+@media (min-width: @tablet-width) {
+  .other-products__price {
+    margin-left: 49px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
+
+.other-products__item {
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .other-products__item {
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .other-products__item {
+    display: flex;
+    margin-bottom: 15px;
+  }
+}
+
 
 .other-products__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .other-products__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.other-products__gift {
+  position: relative;
+  min-height: 289px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .other-products__gift {
+    min-height: 200px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-products__gift {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
 }
 
 .other-products__gift::before {
@@ -62,13 +150,23 @@
   z-index: -1;
   width: 100%;
   height: 304px;
-  top: 0;
-  left: 0;
+  min-width: 289px;
 }
 
-.other-products__gift {
-  position: relative;
-  min-height: 289px;
+@media (min-width: @tablet-width) {
+  .other-products__gift::before {
+    min-height: 202px;
+    height: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-products__gift::before {
+    min-height: 202px;
+    height: 100%;
+    width: 244px;
+    left: 60px;
+  }
 }
 
 .other-products__column {
@@ -76,22 +174,67 @@
   justify-content: space-between;
 }
 
+@media (min-width: @tablet-width) {
+  .other-products__column {
+    justify-content: flex-end;
+  }
+}
+
 @media (min-width: @desktop-width) {
-  .other-products__container {
-    display: flex;
+  .other-products__column {
     justify-content: space-between;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .other-products__list {
-    display: flex;
-    flex-direction: column;
+.other-products__column-2 {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .other-products__column-2 {
+    margin-bottom: 35px;
+    padding: 10px 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .other-products__item {
+  .other-products__column-2 {
+    max-width: 75%;
+    flex: 0 0 75%;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .other-products__container {
     display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-products__container {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .other-products__wrapper {
+    padding: 100px 40px 30px 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-products__wrapper {
+    padding: 110px 0 30px 0;
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__button {
+    width: 244px;
   }
 }

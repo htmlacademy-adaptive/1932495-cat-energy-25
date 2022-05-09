@@ -1,4 +1,59 @@
 .map__picture iframe {
   border: none;
   display: block;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .map__picture iframe {
+    height: 400px;
+  }
+}
+
+.map {
+  background-color: @lightgrey;
+  padding-top: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    padding: 55px 75px 56px 70px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    padding: 0;
+    position: relative;
+  }
+}
+
+.map__picture {
+  position: relative;
+}
+
+.map__picture::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/pin-mobile.png");
+  width: 57px;
+  height: 53px;
+  top: 40%;
+  left: 40%;
+}
+
+@media (min-width: @tablet-width) {
+  .map__picture::before {
+    background-image: url("../../img/pin-tablet.png");
+    width: 113px;
+    height: 104px;
+    top: 35%;
+    left: 45%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map__picture::before {
+    left: 63%;
+  }
 }

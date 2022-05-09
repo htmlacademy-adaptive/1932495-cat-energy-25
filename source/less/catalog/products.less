@@ -1,3 +1,32 @@
-.products {
-  padding-bottom: 15px;
+.products__card {
+  margin-bottom: 10px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .products {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products__button {
+    width: 100%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products__card {
+    flex: 0 0 50%;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__card {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding-top: 10px;
+  }
 }

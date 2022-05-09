@@ -2,13 +2,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
 }
 
 .main-nav__toggle {
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 25px;
   z-index: 2;
   display: block;
   width: 25px;
@@ -18,10 +17,9 @@
   background-color: #ffffff;
 }
 
-.main-nav__toggle::before {
+.main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
   right: 0;
   width: 24px;
   height: 2px;
@@ -29,18 +27,56 @@
   box-shadow: 0 7px 0 0 #000000, 0 14px 0 0 #000000;
 }
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow:
-    0 7px 0 0 fade(#ffffff, 30%),
-    0 14px 0 0 fade(#ffffff, 30%);
+.main-nav--opened .main-nav__toggle::before,
+.main-nav--opened .main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 36px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  transform: rotate(-45deg);
+}
+
+// .main-nav--closed .main-nav__toggle:active::before {
+//   background-color: fade(#ffffff, 30%);
+//   box-shadow:
+//     0 7px 0 0 fade(#ffffff, 30%),
+//     0 14px 0 0 fade(#ffffff, 30%);
+// }
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
 }
 
 
 @media (min-width: @tablet-width) {
   .main-nav__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 
@@ -54,33 +90,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .main-header {
-    display: flex;
-    justify-content: space-between;
-    width: 728px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav {
-    width: 480px;
-  }
-
   .main-nav__toggle {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .main-header {
-    width: 920px;
-  }
-}
-
-@media (min-width: @desktop-width) {
   .main-nav {
     width: 800px;
+    margin-left: auto;
   }
 
   .main-nav__toggle {

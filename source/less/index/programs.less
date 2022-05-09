@@ -25,7 +25,7 @@
 
 @media (min-width: @desktop-width) {
   .programs__item {
-    padding: 82px 50px 0 50px;
+    padding: 82px 50px 60px 50px;
   }
 }
 
@@ -90,6 +90,29 @@
   color: #000000;
   font-size: 16px;
   line-height: 16px;
+  position: relative;
+  z-index: 0;
+  background-color: #f2f2f2;
+  padding-right: 26px;
+}
+
+.programs__link::after {
+  content: "";
+  position: absolute;
+  background: url("../../img/icon_arrow.png") no-repeat center;
+  width: 35px;
+  height: 12px;
+  right: -26px;
+  z-index: -1;
+  top: 30%;
+}
+
+.programs__link:hover::after {
+  right: -36px;
+}
+
+.programs__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -113,13 +136,14 @@
     font-size: 16px;
     line-height: 24px;
     width: 340px;
-    margin-bottom: 45px;
+    margin-bottom: 48px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .programs__description {
     width: 467px;
+    margin-bottom: 24px;
   }
 }
 

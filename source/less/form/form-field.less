@@ -1,10 +1,22 @@
 .form-field {
   display: flex;
-  padding-bottom: 15px;
   align-items: center;
+  padding-bottom: 15px;
+  position: relative;
 }
 
-.form-field__label,
+@media (min-width: @tablet-width) {
+  .form-field {
+    flex-basis: 49%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-field--1 {
+    margin-right: 70px;
+  }
+}
+
 .form-field__control {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -12,15 +24,42 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #e7e7e7;
+  padding: 13px 19px;
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__control {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-field__label {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
   margin-right: 12px;
   flex-shrink: 0;
 }
 
-.form-field__control {
-  border: 1px solid #e7e7e7;
-  padding: 13px 19px;
-  width: 95%;
+@media (min-width: @tablet-width) {
+  .form-field__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form-field__control--textarea {
+  padding: 8px 9px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__control--textarea {
+    height: 160px;
+  }
 }

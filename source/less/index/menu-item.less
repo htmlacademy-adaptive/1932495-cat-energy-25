@@ -33,3 +33,32 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .menu-item__link--color {
+    color: #ffffff;
+  }
+}
+
+.menu-item__link--underline {
+  position: relative;
+}
+
+
+@media (min-width: @tablet-width) {
+  .menu-item__link--underline::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: @basicgreen;
+    width: 70%;
+    left: 15px;
+    bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu-item__link--underline::after {
+    background-color: #ffffff;
+  }
+}

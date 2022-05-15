@@ -3,6 +3,42 @@
   padding: 25px 20px 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .before-after {
+    background-color: #ffffff;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after {
+    display: flex;
+    padding: 0;
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__container {
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__container {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding: 0;
+    z-index: 1;
+  }
+}
+
 .before-after__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -10,7 +46,21 @@
   line-height: 40px;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__title {
+    margin-bottom: 140px;
+  }
 }
 
 .before-after__description {
@@ -21,12 +71,33 @@
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .before-after__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__description {
+    width: 435px;
+    margin-bottom: 50px;
+  }
+}
+
 .before-after__item {
   position: relative;
   width: 124px;
   border-radius: 5px;
-  padding: 13px 0 18px;
+  padding: 17px 0 18px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__item {
+    min-width: 165px;
+  }
 }
 
 .before-after__list,
@@ -35,6 +106,10 @@
 .before-after__price {
   margin: 0;
   padding: 0;
+}
+
+.before-after__price--wrapper {
+  margin-bottom: 40px;
 }
 
 .before-after__annotation {
@@ -48,6 +123,21 @@
   margin-top: -10px;
 }
 
+@media (min-width: @tablet-width) {
+  .before-after__annotation {
+    font-size: 14px;
+    line-height: 14px;
+    width: 150px;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__annotation {
+    background-color: #f2f2f2;
+  }
+}
+
 .before-after__value {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -58,12 +148,25 @@
   padding: 15px 20px;
 }
 
+@media (min-width: @tablet-width) {
+  .before-after__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
 .before-after__list {
   list-style: none;
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__list {
+    margin-bottom: 45px;
+  }
 }
 
 .before-after__price {
@@ -77,14 +180,146 @@
 }
 
 @media (min-width: @tablet-width) {
+  .before-after__price {
+    font-size: 20px;
+    line-height: 20px;
+    width: 180px;
+    text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__price {
+    width: inherit;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__price span {
+    margin-right: 65px;
+  }
+}
+
+@media (min-width: @tablet-width) {
   .before-after__price--wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__price--wrapper {
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: @tablet-width) {
   .before-after__item {
     margin-right: 42px;
+  }
+}
+
+.before-after__image {
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__image {
+    position: relative;
+    display: flex;
+    max-width: inherit;
+    height: 560px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__image {
+    max-width: 700px;
+    height: 480px;
+  }
+}
+
+
+.before-after__image--fat {
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__image--fat {
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    clip: rect(auto, 320px, auto, auto);
+  }
+}
+
+
+.before-after__image--slim {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__image--slim {
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    clip: rect(auto, auto, auto, 245px);
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .before-after__cat::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 67%;
+    background: linear-gradient(to right, #f2f2f2 50%, #f2f2f2 50%);
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__cat::after {
+    content: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after::after {
+    content: "";
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+    height: 77%;
+    background: linear-gradient(to right, #f2f2f2 50%, #f2f2f2 50%);
+    width: calc(100% + 150px);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .before-after__cat {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__cat {
+    flex: 0 0 70%;
+    max-width: 70%;
   }
 }

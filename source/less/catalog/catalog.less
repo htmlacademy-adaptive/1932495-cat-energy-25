@@ -32,3 +32,25 @@
     width: 168px;
   }
 }
+
+
+.catalog__card {
+  position: relative;
+}
+
+.catalog__card::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #ebebeb;
+  width: calc(100% + 40px);
+  left: -20px;
+  right: 0;
+  bottom: 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .catalog__card::after {
+    content: none;
+  }
+}

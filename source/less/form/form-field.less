@@ -5,6 +5,11 @@
   position: relative;
 }
 
+
+.form__field:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .form-field {
     flex-basis: 49%;
@@ -23,6 +28,19 @@
   width: 100%;
 }
 
+.form-field__control:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.form-field__control:active,
+.form-field__control:focus {
+  outline: 2px solid #444444;
+}
+
+.form-field__control:focus:invalid {
+  outline: 2px solid #ff8282;
+}
+
 @media (min-width: @tablet-width) {
   .form-field__control {
     font-size: 20px;
@@ -37,7 +55,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-  margin-right: 12px;
+  margin-right: 15px;
   flex-shrink: 0;
 }
 

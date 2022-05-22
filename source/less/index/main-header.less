@@ -11,6 +11,8 @@
 @media (min-width: @desktop-width) {
   .main-header {
     border-bottom: none;
+    width: 1240px;
+    margin: 0 auto;
   }
 }
 
@@ -19,13 +21,22 @@
   width: auto;
 }
 
+.main-header__logo-image:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-image:active {
+  opacity: 0.6;
+}
+
+
 .main-header__container {
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   position: relative;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  // padding-top: 10px;
+  // padding-bottom: 15px;
   margin-bottom: 25px;
   border-bottom: 1px #d9d9d9 solid;
   flex-wrap: wrap;
@@ -45,12 +56,16 @@
   .main-header__container {
     padding: 55px 0 0 0;
     border-bottom: none;
-    width: 1240px;
-    margin: 0 auto;
   }
 }
 
 .main-header__container--index {
   border: none;
   margin-bottom: 0;
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-header__logo {
+    padding: 10px 20px 15px;
+  }
 }

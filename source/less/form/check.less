@@ -1,13 +1,16 @@
 .check {
   display: flex;
   position: relative;
-  padding: 7px 0 10px 45px;
+  padding: 7px 0 16px 45px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-bottom: 13px;
+}
+
+.check:hover::after {
+  border: 1px solid #bfbfbf;
 }
 
 @media (min-width: @tablet-width) {

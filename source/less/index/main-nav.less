@@ -1,3 +1,10 @@
+@media (max-width: @mobile-width-only) {
+  .main-nav {
+    width: 100%;
+  }
+}
+
+
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -109,7 +116,7 @@
 
 .main-nav__wrapper {
   position: absolute;
-  z-index: 2;
+  z-index: 12;
   background-color: #ffffff;
   width: 100%;
   left: 0;
@@ -127,12 +134,12 @@
 }
 
 .main-nav--nojs .main-nav__wrapper {
-  position: absolute;
+  position: relative;
   z-index: 2;
-  background-color: #ffffff;
+  // background-color: #ffffff;
   width: 100%;
   left: 0;
-  top: 60px;
+  top: 0;
 }
 
 @media (min-width: @desktop-width) {

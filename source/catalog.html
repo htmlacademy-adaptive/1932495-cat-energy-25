@@ -5,30 +5,36 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <header class="main-header container">
     <div class="main-header__container main-header__container--index">
-      <a class="main-header__logo">
-        <picture>
-          <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип">
-        </picture>
-      </a>
+      <div class="main-header__logo">
+        <a>
+          <picture>
+            <source media="(min-width: 1240px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип">
+          </picture>
+        </a>
+      </div>
 
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item menu-item"><a class="menu-item__link" href="#">Главная</a></li>
-            <li class="main-nav__item menu-item"><a class="menu-item__link" href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__item menu-item"><a class="menu-item__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item menu-item"><a class="menu-item__link  menu-item__link--underline"
+                href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item menu-item"><a class="menu-item__link" href="form.html">Подбор программы</a></li>
           </ul>
@@ -269,11 +275,15 @@
         <article class="catalog__card catalog__card--all-catalog all-cards">
           <h3 class="all-cards__title">Показать еще 100500 товаров</h3>
           <p class="all-cards__description">На самом деле вкусов гораздо больше!</p>
-          <a class="button catalog__button--all-cards">Показать все</a>
+          <a class="button all-cards__button">Показать все</a>
         </article>
       </section>
       <section class="other-products products-wrapper">
-        <h2 class="other-products__header">Дополнительные товары</h2>
+        <div class="products-wrapper__stripe">
+          <h2 class="other-products__header">
+            <span class="products-wrapper__text">Дополнительные товары</span>
+          </h2>
+        </div>
         <div class="other-products__wrapper">
           <div class="other-products__column-2">
             <ul class="other-products__list">
@@ -289,6 +299,7 @@
                   <div class="products__button">
                     <a href="#" class="button other-products__button">Заказать</a>
                   </div>
+                </div>
               </li>
               <li class="other-products__item">
                 <div class="other-products__container products">
@@ -335,33 +346,26 @@
             </ul>
           </div>
           <div class="other-products__gift gift">
-            <svg class="form__icon" width="78" height="80" viewBox="0 0 78 80">
-              <use xlink:href="img/sprite.svg#icon-present"></use>
-            </svg>
             <p class="gift__description">Закажите все <br> и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
     </div>
 
-    <div class="map map--color">
-      <div class="map__contacts contacts">
-        <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
-        <div class="contacts__address address">
-          <address class="address__street">ул. Большая Конюшенная, д. 19/8</address>
-          <address class="address_city">Санкт-Петербург</address>
-        </div>
-      </div>
-    </div>
-    <div class="map__picture">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650926722156!5m2!1sru!2sru"
-        width="320" height="362" allowfullscreen></iframe>
-    </div>
-
   </main>
 
   <footer class="main-footer">
+    <div class="map">
+      <div class="map__contacts contacts">
+        <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
+      </div>
+      <div class="map__picture">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650926722156!5m2!1sru!2sru"
+          width="320" height="362" allowfullscreen></iframe>
+      </div>
+    </div>
     <div class="main-footer__wrapper">
       <div class="main-footer__logo logo main-footer__column">
         <a class="logo__link">
@@ -372,32 +376,32 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg width="27" height="17" viewBox="0 0 27 17">
+              <svg class="social__svg" width="27" height="17" viewBox="0 0 27 17">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-              <svg width="24" height="19" viewBox="0 0 24 19">
+              <svg class="social__svg" width="24" height="19" viewBox="0 0 24 19">
                 <use xlink:href="img/sprite.svg#icon-yt"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg width="20" height="18" viewBox="0 0 20 18">
+              <svg class="social__svg" width="20" height="18" viewBox="0 0 20 18">
                 <use xlink:href="img/sprite.svg#icon-tg"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright main-footer__column">
+      <div class="main-footer__copyright copyright main-footer__column social">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="copyright__text">HTML Academy</span> </a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34" viewBox="0 0 27 34">
+          <svg class="social__svg" width="27" height="34" viewBox="0 0 27 34">
             <use xlink:href="img/sprite.svg#icon-school"></use>
           </svg>
         </a>

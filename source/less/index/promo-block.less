@@ -20,6 +20,16 @@
   z-index: 3;
 }
 
+.promo-block__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 4;
+}
+
 @media (min-width: @tablet-width) {
   .promo-block {
     padding-bottom: 530px;
@@ -38,19 +48,7 @@
   .promo-block__container {
     padding-bottom: 0;
   }
-}
 
-.promo-block__slogan {
-  margin: 0;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 4;
-}
-
-@media (min-width: @tablet-width) {
   .promo-block__slogan {
     font-size: 20px;
     line-height: 20px;
@@ -111,15 +109,15 @@
 @media (min-width: @desktop-width) {
   .promo-block::before {
     content: "";
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-promo-background.jpg");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/cat-promo-background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: @basicgreen;
+    background-color: #68b738;
     position: absolute;
     z-index: -1;
-    width: 58%;
+    width: 50vw;
     top: -120px;
-    right: -100px;
+    left: 50%;
     min-height: 302px;
     height: 100%;
   }

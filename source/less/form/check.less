@@ -1,5 +1,5 @@
 .check {
-  display: flex;
+  display: block;
   position: relative;
   padding: 7px 0 16px 45px;
   font-family: "Oswald", sans-serif;
@@ -27,18 +27,24 @@
   position: absolute;
 }
 
-.check::after {
+.check__label {
   content: "";
   position: absolute;
   width: 30px;
   height: 30px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #cdcdcd;
   left: 0;
   top: 0;
 }
 
 @media (min-width: @tablet-width) {
   .check::after {
+    width: 40px;
+    height: 40px;
+    top: 25px;
+  }
+
+  .check__label {
     width: 40px;
     height: 40px;
     top: 25px;
@@ -61,6 +67,5 @@
 @media (min-width: @tablet-width) {
   .check__control:checked + .check__label::after {
     left: 15px;
-    top: 40px;
   }
 }

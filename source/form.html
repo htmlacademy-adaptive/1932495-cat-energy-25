@@ -54,15 +54,17 @@
         <div class="form__info">
           <label class="form__field form-field">
             <span class="form-field__label">Имя*</span>
-            <input class="form-field__control" type="text" name="cat-name" placeholder="Барсик" required>
+            <input class="form-field__control" type="text" name="cat-name" value="Барсик" placeholder="Введите имя кота"
+              required>
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Вес (кг):*</span>
-            <input class="form-field__control" type="text" name="weight-name" placeholder="7" required>
+            <input class="form-field__control" type="text" name="weight-name" value="7"
+              placeholder="Введите возраст кота" required>
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Возраст (лет):</span>
-            <input class="form-field__control" type="text" name="age-name" placeholder="7">
+            <input class="form-field__control" type="text" name="age-name" value="7" placeholder="Введите вес кота">
           </label>
         </div>
         <div class="form__radio  form__info">
@@ -78,7 +80,7 @@
               Набор массы
             </label>
             <label class="form__field radio">
-              <input class="radio__control" type="radio" name="weight" disabled>
+              <input class="radio__control" type="radio" name="weight">
               <span class="radio__label"></span>
               Не знаю (Нужен ваш совет)
             </label>
@@ -94,14 +96,16 @@
         <div class="form__email">
           <label class="form__field form-field">
             <span class="form-field__label">E-mail:*</span>
-            <input class="form-field__control" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+            <input class="form-field__control" type="email" name="email" value="kuklachev@gmail.com"
+              placeholder="Введите почту" required>
             <svg class="form__icon form__icon--email" width="19" height="14" viewBox="0 0 19 14">
               <use xlink:href="img/sprite.svg#icon-email"></use>
             </svg>
           </label>
           <label class="form__field form-field">
             <span class="form-field__label">Телефон:*</span>
-            <input class="form-field__control" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+            <input class="form-field__control" type="tel" name="phone" value="8 (960) 900-60-90"
+              placeholder="Введите номер телефона">
             <svg class="form__icon" width="20" height="21" viewBox="0 0 20 21">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
@@ -174,12 +178,28 @@
         <b class="contacts__title">Приглашаем <br> к сотрудничеству дилеров!</b>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <div class="map__picture">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650926722156!5m2!1sru!2sru"
-          width="320" height="362" allowfullscreen></iframe>
+
+      <div class="map__image map-image">
+        <div class="map__picture">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650926722156!5m2!1sru!2sru"
+            width="320" height="362" allowfullscreen></iframe>
+        </div>
+        <div class="map-image__block">
+          <picture>
+            <source type="image/webp" media="(min-width: 1240px)"
+              srcset="img/card-desktop.webp 1x, img/card-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/card-tablet.webp 1x, img/card-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/card-mobile.webp, img/card-mobile@2x.webp 2x">
+            <source media="(min-width: 1240px)" srcset="img/card-desktop.jpg 1x, img/card-desktop@2x.jpg  2x">
+            <source media="(min-width: 768px)" srcset="img/card-tablet.jpg 1x, img/card-tablet@2x.jpg  2x">
+            <img class="map-image__img" src="img/card-mobile.jpg" srcset="img/card-mobile@2x.jpg 2x" alt="Карта">
+          </picture>
+        </div>
       </div>
     </div>
+
     <div class="main-footer__wrapper">
       <div class="main-footer__logo logo main-footer__column">
         <a class="logo__link">

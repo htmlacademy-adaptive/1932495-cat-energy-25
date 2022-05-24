@@ -31,10 +31,6 @@
   top: 0;
 }
 
-.radio__label:hover {
-  border: 1px solid #bfbfbf;
-}
-
 @media (min-width: @tablet-width) {
   .radio__label {
     width: 40px;
@@ -77,6 +73,13 @@
     0 0 0 0.2em #7ed321;
 }
 
-.radio__control:disabled + .radio__label {
-  border: 1px solid rgba(186, 186, 186, 0.3);
+.check__control:hover + .check__label {
+  border: 1px solid #bababa;
 }
+
+.check__control:focus + .check__label {
+  box-shadow:
+    0 0 0 0.1em #4a90e2,
+    0 0 0 0.2em #7ed321;
+}
+

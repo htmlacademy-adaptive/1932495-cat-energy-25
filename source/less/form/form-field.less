@@ -12,7 +12,7 @@
 }
 
 .form-field__control {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -45,7 +45,7 @@
 }
 
 .form-field__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -62,12 +62,25 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .form-field__label {
+    margin-right: 21px;
+  }
+}
+
 .form-field__control--textarea {
-  padding: 8px 9px;
+  padding: 12px 13px;
+  resize: none;
 }
 
 @media (min-width: @tablet-width) {
   .form-field__control--textarea {
     height: 160px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-field__control--textarea {
+    height: 176px;
   }
 }

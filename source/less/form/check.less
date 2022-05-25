@@ -2,7 +2,7 @@
   display: block;
   position: relative;
   padding: 7px 0 16px 45px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -67,5 +67,19 @@
 @media (min-width: @tablet-width) {
   .check__control:checked + .check__label::after {
     left: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .check {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 23px;
+    padding-left: 71px;
+  }
+
+  .check__label {
+    left: 16px;
+    top: 14px;
   }
 }

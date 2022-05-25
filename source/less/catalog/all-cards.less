@@ -1,5 +1,5 @@
 .all-cards__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -43,7 +43,7 @@
 
 @media (min-width: @tablet-width) {
   .all-cards {
-    padding: 165px 30px 25px 30px;
+    padding: 159px 30px 25px 30px;
     min-height: 400px;
     max-width: 324px;
     border: 2px #f2f2f2 solid;
@@ -69,6 +69,12 @@
     width: 60px;
     height: 60px;
     top: -120px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .all-cards__title::after {
+    top: -109px;
   }
 }
 

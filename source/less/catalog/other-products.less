@@ -1,5 +1,5 @@
 .other-products__header {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -45,7 +45,7 @@
 @media (min-width: @desktop-width) {
   .other-products__header {
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 15px;
   }
 
   .other-products__header::before {
@@ -101,9 +101,11 @@
 
 @media (min-width: @desktop-width) {
   .other-products__item::after {
-    top: 60px;
-    left: 0;
-    width: 100%;
+    content: none;
+  }
+
+  .other-products__item--last {
+    padding-top: 15px;
   }
 }
 
@@ -116,13 +118,15 @@
 
 @media (min-width: @desktop-width) {
   .other-products__item:not(:last-child) {
-    margin-bottom: 15px;
+    padding-top: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ebebeb;
   }
 }
 
 
 .other-products__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -187,7 +191,7 @@
     min-height: 288px;
     height: 100%;
     width: 244px;
-    left: 50px;
+    left: 59px;
   }
 }
 
@@ -205,6 +209,8 @@
 @media (min-width: @desktop-width) {
   .other-products__column {
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 29px;
   }
 }
 
@@ -226,10 +232,11 @@
   .other-products__column-2 {
     max-width: 75%;
     flex: 0 0 75%;
-    padding: 0;
+    padding: 11px 0 0;
+    border: 1px solid #ebebeb;
     border-right: none;
     border-left: none;
-    padding-top: 15px;
+    padding-left: 15px;
   }
 }
 
@@ -243,6 +250,7 @@
 @media (min-width: @desktop-width) {
   .other-products__container {
     justify-content: space-between;
+    margin-right: 15px;
   }
 }
 

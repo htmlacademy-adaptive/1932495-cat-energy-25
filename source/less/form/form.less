@@ -1,4 +1,8 @@
 .form__radio {
+  font-size: 16px;
+}
+
+.form__button {
   position: relative;
 }
 
@@ -48,17 +52,18 @@
   .form__programs {
     padding-top: 17px;
     border: 1px solid #e6e6e6;
+    padding-bottom: 8px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__programs {
-    padding: 23px 0 16px;
+    padding: 25px 0 16px;
   }
 }
 
 .form__info {
-  padding: 0 20px 20px;
+  padding: 0 20px 26px;
 }
 
 
@@ -80,7 +85,7 @@
 
 @media (min-width: @tablet-width) {
   .form__radio {
-    padding: 60px 40px 25px 45px;
+    padding: 55px 34px 25px 34px;
   }
 }
 
@@ -96,7 +101,8 @@
 
 @media (min-width: @tablet-width) {
   .form__container--textarea {
-    padding-top: 35px;
+    padding-top: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -110,7 +116,7 @@
 
 @media (min-width: @tablet-width) {
   .form__container--check {
-    padding-top: 40px;
+    padding-top: 36px;
   }
 }
 
@@ -143,12 +149,12 @@
 }
 
 .form__raw {
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 @media (min-width: @tablet-width) {
   .form__raw {
-    padding: 20px 40px 0 30px;
+    padding: 24px 40px 0 40px;
     margin-bottom: 55px;
   }
 }
@@ -168,6 +174,12 @@
   right: 5%;
 }
 
+@media (min-width: @desktop-width) {
+  .form__icon {
+    right: 18px;
+  }
+}
+
 .form__icon--email {
   fill: #ffffff;
 }
@@ -178,22 +190,22 @@
 }
 
 .form__email {
-  padding: 30px 20px 10px;
+  padding: 33px 20px 10px;
 }
 
 @media (min-width: @tablet-width) {
   .form__email {
-    padding: 70px 55px 20px 65px;
+    padding: 70px 55px 20px 70px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form__email {
-    width: 1240px;
+    width: 1220px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 0 0 20px 12px;
+    padding: 0 0 20px 0;
   }
 }
 
@@ -204,7 +216,7 @@
 
 @media (min-width: @tablet-width) {
   .form__label {
-    padding: 70px 70px 15px 70px;
+    padding: 75px 74px 15px 70px;
   }
 }
 
@@ -217,11 +229,10 @@
 @media (min-width: @desktop-width) {
   .check-field-1 {
     display: flex;
-    flex: 0 0 25%;
+    flex: 0 0 21%;
   }
 
   .form-field--email {
-    padding-right: 16px;
-    margin-right: 63px;
+    margin-right: 72px;
   }
 }

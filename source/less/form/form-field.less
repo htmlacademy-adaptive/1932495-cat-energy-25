@@ -1,8 +1,14 @@
 .form-field {
   display: flex;
   align-items: center;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   position: relative;
+}
+
+@media (min-width: @desktop-width) {
+  .form-field {
+    padding-bottom: 16px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -19,7 +25,7 @@
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #e7e7e7;
-  padding: 13px 19px;
+  padding: 13px 14px;
   width: 100%;
 }
 
@@ -44,6 +50,13 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .form-field__control {
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+}
+
 .form-field__label {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -59,28 +72,30 @@
   .form-field__label {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 25px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-field__label {
-    margin-right: 21px;
+    margin-right: 18px;
   }
 }
 
 .form-field__control--textarea {
-  padding: 12px 13px;
+  padding: 9px 13px;
   resize: none;
 }
 
 @media (min-width: @tablet-width) {
   .form-field__control--textarea {
-    height: 160px;
+    height: 176px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-field__control--textarea {
     height: 176px;
+    padding-left: 8px;
   }
 }

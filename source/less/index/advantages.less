@@ -1,24 +1,24 @@
 .advantages {
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 50px;
-  padding-top: 18px;
+  margin-bottom: 47px;
+  padding-top: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
     padding-left: 30px;
-    padding-top: 60px;
-    margin-bottom: 26px;
+    padding-top: 47px;
+    margin-bottom: 11px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages {
     padding-left: 5px;
-    padding-top: 74px;
+    padding-top: 71px;
     padding-right: 10px;
-    margin-bottom: 21px;
+    margin-bottom: 0;
   }
 }
 
@@ -42,20 +42,39 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 40px 0;
+  margin: -4px 0 42px 0;
 }
 
 @media (min-width: @tablet-width) {
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 80px 0;
+    margin: 0 0 72px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__title {
+    margin: 0 0 79px;
   }
 }
 
 .advantages__item:not(:last-child) {
   padding-bottom: 20px;
 }
+
+@media (min-width: @tablet-width) {
+  .advantages__item:not(:last-child) {
+    padding-bottom: 136px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item:not(:last-child) {
+    padding-bottom: 127px;
+  }
+}
+
 
 .advantages__item--leaf::before {
   background-image: url("../img/index-leaf.svg");
@@ -75,6 +94,26 @@
 .advantages__item--alarm::before {
   background-image: url("../img/icon_alarm.svg");
   background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item--powder {
+    padding-left: 24px;
+  }
+
+  .advantages__item--alarm {
+    padding-left: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item--powder {
+    padding-left: 0;
+  }
+
+  .advantages__item--alarm {
+    padding-left: 0;
+  }
 }
 
 .advantages__list {
@@ -114,7 +153,7 @@
 
   .advantages__item::before {
     top: -10px;
-    left: 12px;
+    left: 7px;
   }
 }
 
@@ -132,29 +171,29 @@
 
 @media (min-width: @tablet-width) {
   .advantages__item--leaf::after {
-    top: -105px;
-    left: 140px;
+    top: -119px;
+    left: 119px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages__item--powder::after {
-    top: -105px;
-    left: 120px;
+    top: -119px;
+    left: 119px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages__item--tableware::after {
-    top: -105px;
-    left: 130px;
+    top: -119px;
+    left: 119px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages__item--alarm::after {
-    top: -105px;
-    left: 130px;
+    top: -119px;
+    left: 119px;
   }
 }
 

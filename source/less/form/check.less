@@ -71,6 +71,12 @@
 }
 
 @media (min-width: @desktop-width) {
+  .check__control:checked + .check__label::after {
+    left: 9px;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .check {
     font-size: 20px;
     line-height: 30px;

@@ -50,9 +50,9 @@
 
 @media (min-width: @tablet-width) {
   .form__programs {
-    padding-top: 17px;
+    padding-top: 21px;
     border: 1px solid #e6e6e6;
-    padding-bottom: 8px;
+    padding-bottom: 13px;
   }
 }
 
@@ -66,11 +66,28 @@
   padding: 0 20px 26px;
 }
 
+.form__programs {
+  position: relative;
+}
+
+.form__programs::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #e6e6e6;
+  width: 100vw;
+  top: -15px;
+  left: -50px;
+}
 
 @media (min-width: @tablet-width) {
   .form__info {
     flex-basis: 50%;
     padding: 0 30px;
+  }
+
+  .form__programs::before {
+    content: none;
   }
 }
 
@@ -85,7 +102,7 @@
 
 @media (min-width: @tablet-width) {
   .form__radio {
-    padding: 55px 34px 25px 34px;
+    padding: 55px 29px 23px 34px;
   }
 }
 
@@ -174,6 +191,12 @@
   right: 5%;
 }
 
+@media (min-width: @tablet-width) {
+  .form__icon {
+    right: 3%;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .form__icon {
     right: 18px;
@@ -195,7 +218,7 @@
 
 @media (min-width: @tablet-width) {
   .form__email {
-    padding: 70px 55px 20px 70px;
+    padding: 72px 65px 20px 70px;
   }
 }
 

@@ -26,8 +26,18 @@
   position: relative;
 }
 
+.card__description--1 {
+  padding-bottom: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .card__description--1 {
+    padding-bottom: 0;
+  }
+}
+
 .card--odd {
-  padding-bottom: 44px;
+  padding-bottom: 45px;
 }
 
 .card__ref {
@@ -40,7 +50,7 @@
     width: 100%;
     background-color: @lightgrey;
     min-height: 400px;
-    padding: 150px 0 38px 0;
+    padding: 150px 0 31px 0;
     max-width: 325px;
   }
 }
@@ -56,7 +66,7 @@
 @media (min-width: @tablet-width) {
   .card__link {
     position: absolute;
-    top: -220px;
+    top: -229px;
     display: flex;
     min-height: 211px;
     align-items: flex-end;
@@ -104,7 +114,7 @@
 
 @media (min-width: @desktop-width) {
   .card__list::before {
-    top: 24px;
+    top: 22px;
   }
 }
 
@@ -127,6 +137,10 @@
   width: 50%;
 }
 
+.card__image--1 {
+  padding-top: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .card__image {
     justify-content: center;
@@ -140,11 +154,15 @@
     width: 100%;
     padding-top: 11px;
   }
+
+  .card__image--3 {
+    padding-top: 5px;
+  }
 }
 
 .card__wrapper {
   display: flex;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-left: 34px;
 }
 
@@ -191,7 +209,7 @@
     padding-left: 35px;
     padding-right: 40px;
     box-sizing: border-box;
-    padding-top: 5px;
+    padding-top: 9px;
   }
 }
 
@@ -203,5 +221,13 @@
 
   .card__wrapper {
     padding-bottom: 24px;
+  }
+
+  .card__image--3 {
+    padding-top: 5px;
+  }
+
+  .card__image--1 {
+    padding-top: 7px;
   }
 }

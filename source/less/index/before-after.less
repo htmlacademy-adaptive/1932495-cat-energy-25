@@ -1,12 +1,13 @@
 .before-after {
   background-color: @darkgrey;
-  padding: 26px 20px 40px;
+  padding: 26px 20px 42px;
 }
 
 @media (min-width: @tablet-width) {
   .before-after {
     background-color: #ffffff;
     padding: 0;
+    margin-bottom: -3px;
   }
 }
 
@@ -33,7 +34,7 @@
     padding-top: 24px;
     padding-left: 31px;
     padding-right: 33px;
-    margin-bottom: 55px;
+    margin-bottom: 61px;
   }
 }
 
@@ -68,6 +69,7 @@
   .before-after__title {
     margin-bottom: 140px;
     width: 550px;
+    margin-top: -5px;
   }
 }
 
@@ -90,14 +92,15 @@
   .before-after__description {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 32px;
+    padding-right: 5px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .before-after__description {
-    width: 435px;
-    margin-bottom: 50px;
+    width: 437px;
+    margin-bottom: 48px;
   }
 }
 
@@ -105,7 +108,7 @@
   position: relative;
   width: 124px;
   border-radius: 5px;
-  padding: 17px 0 20px;
+  padding: 18px 0 17px;
   text-align: center;
 }
 
@@ -236,7 +239,7 @@
     line-height: 20px;
     width: 180px;
     text-align: right;
-    margin-top: -5px;
+    margin-top: -1px;
   }
 }
 
@@ -256,6 +259,12 @@
 @media (min-width: @tablet-width) {
   .before-after__item {
     margin-right: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .before-after__item {
+    margin-right: 40px;
   }
 }
 
@@ -359,6 +368,6 @@
     min-height: 462px;
     box-sizing: border-box;
     padding-bottom: 40px;
-    padding-top: 65px;
+    padding-top: 68px;
   }
 }
